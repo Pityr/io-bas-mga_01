@@ -1,32 +1,164 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8">
-  <title>3D РјРѕРґРµР» - С‚РµСЃС‚</title>
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <style>
-    body {
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #f2f2f2;
-    }
-    model-viewer {
-      width: 80%;
-      height: 80%;
-      border: 2px solid #444;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    }
-  </style>
+<meta charset="windows-1251">
+<title>3D Модели и таблица</title>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  th, td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #444;
+    color: white;
+  }
+  model-viewer {
+    width: 200px;
+    height: 120px;
+    border: 1px solid #666;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+</style>
 </head>
 <body>
-  <model-viewer src="model.glb" alt="РњРѕСЏС‚ 3D РјРѕРґРµР»"
-    camera-controls
-    auto-rotate
-    shadow-intensity="1">
-  </model-viewer>
+
+<h1>Резултати, модели</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Дата</th>
+      <th>Станция</th>
+      <th>Геогр. ширина</th>
+      <th>Геогр. дължина</th>
+      <th>Воден стълб</th>
+      <th>3D Модел</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>2025-08-11</td>
+      <td>MS005, Вн. Север</td>
+      <td>43.20565</td>
+      <td>27.95967</td>
+      <td>15 m</td>
+      <td>
+        <model-viewer src="model.glb" alt="3D модел" camera-controls auto-rotate shadow-intensity="1">
+        </model-viewer>
+      </td>
+    </tr>
+
+    <tr>
+      <td>2025-08-11</td>
+      <td>Станция 1</td>
+      <td>42.123</td>
+      <td>27.456</td>
+      <td>10.5 m</td>
+      <td>
+        <model-viewer src="model1.glb" alt="3D модел" camera-controls auto-rotate shadow-intensity="1">
+        </model-viewer>
+      </td>
+    </tr>
+
+    <tr>
+      <td>2025-08-11</td>
+      <td>Станция 1</td>
+      <td>42.123</td>
+      <td>27.456</td>
+      <td>10.5 m</td>
+      <td>
+        <model-viewer src="model1.glb" alt="3D модел" camera-controls auto-rotate shadow-intensity="1">
+        </model-viewer>
+      </td>
+    </tr>
+
+    <tr>
+      <td>2025-08-28</td>
+      <td>Станция 1</td>
+      <td>42.123</td>
+      <td>27.456</td>
+      <td>10.5 m</td>
+      <td>
+        <model-viewer src="model1.glb" alt="3D модел" camera-controls auto-rotate shadow-intensity="1">
+        </model-viewer>
+      </td>
+    </tr>
+
+    <tr>
+      <td>2025-08-28</td>
+      <td>Станция 1</td>
+      <td>42.123</td>
+      <td>27.456</td>
+      <td>10.5 m</td>
+      <td>
+        <model-viewer src="model1.glb" alt="3D модел" camera-controls auto-rotate shadow-intensity="1">
+        </model-viewer>
+      </td>
+    </tr>
+
+    <tr>
+      <td>2025-08-28</td>
+      <td>Станция 1</td>
+      <td>42.123</td>
+      <td>27.456</td>
+      <td>10.5 m</td>
+      <td>
+        <model-viewer src="model1.glb" alt="3D модел" camera-controls auto-rotate shadow-intensity="1">
+        </model-viewer>
+      </td>
+    </tr>
+
+    <tr>
+      <td>2025-08-28</td>
+      <td>Станция 1</td>
+      <td>42.123</td>
+      <td>27.456</td>
+      <td>10.5 m</td>
+      <td>
+        <model-viewer src="model1.glb" alt="3D модел" camera-controls auto-rotate shadow-intensity="1">
+        </model-viewer>
+      </td>
+    </tr>
+
+    <tr>
+      <td>2025-08-28</td>
+      <td>Станция 1</td>
+      <td>42.123</td>
+      <td>27.456</td>
+      <td>10.5 m</td>
+      <td>
+        <model-viewer src="model1.glb" alt="3D модел" camera-controls auto-rotate shadow-intensity="1">
+        </model-viewer>
+      </td>
+    </tr>
+
+    <tr>
+      <td>2025-08-28</td>
+      <td>Станция 1</td>
+      <td>42.123</td>
+      <td>27.456</td>
+      <td>10.5 m</td>
+      <td>
+        <model-viewer src="model1.glb" alt="3D модел" camera-controls auto-rotate shadow-intensity="1">
+        </model-viewer>
+      </td>
+
+  </tbody>
+</table>
+
 </body>
 </html>
